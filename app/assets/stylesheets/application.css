@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+ #root {
+   height: 100vh;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+ }
+ 
+ .container {
+   height: 100vh;
+   display: flex;
+   width: 100%;
+ 
+ }
+ 
+ .add-todo {
+   background-image: url("/images/1.jpg");
+   height: 100vh;
+   overflow: hidden;
+   width: 100%;
+   text-align: center;
+ 
+ }
+ 
+ .add-todo img {
+   width: 85%;
+ }
+ 
+ .add-todo__header {
+   margin-left: 35px;
+ }
+ 
+ .add-todo__title {
+   font-weight: 700;
+   color: #E4E4E4;
+   font-size: xx-large;
+ }
+ 
+ .add-todo__text {
+   width: 350px;
+   height: 65px;
+   display: block;
+   border-radius: 10px;
+   border: #E4E4E4 1px solid;
+   font-size: 25px;
+   padding-left: 15px;
+   box-shadow: -5px 3px 5px -4px rgba(0,0,0,0.39);
+ }
+ 
+ .add-todo__btn {
+   width: 150px;
+   height: 45px;
+   background-color: #3260b5;
+   color: #E4E4E4;
+   margin-top: 25px;
+   border-radius: 10px;
+   border: #1f171c 1px solid;
+   font-size: 18px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ .info {
+   margin-top: 65px;
+   color: #E4E4E4;
+   font-size: small;
+ }
+ 
+ 
+ .list-todo {
+   flex: 1 1 0;
+   background-image: url("/images/5.jpg");
+   overflow-y: scroll;
+   height: 100vh;
+ }
+ 
+ .list-todo1 {
+   flex: 1 1 0;
+   background-image: url("/images/3.jpg");
+   overflow-y: scroll;
+   height: 100vh;
+ }
+ 
+ .list-todo__empty {
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+   color: #E4E4E4;
+   height: 100%;
+ }
+ 
+ .list-todo__empty img {
+   width: 45%;
+   margin-top: 45px;
+   padding: 25px;
+  
+ }
+ 
+ .list-todo-content {
+   display: flex;
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center;
+   margin-top: 35px; 
+ }
+ 
+ .list-todo__main {
+   display: flex;
+   height: 100px;
+   color: #E4E4E4;
+   margin-bottom: 25px;
+   width: 80%;
+   background-color: #965CFF;
+   border-radius: 10px;
+   -webkit-box-shadow: -5px 3px 5px -4px rgba(0,0,0,0.39);
+   -moz-box-shadow: -5px 3px 5px -4px rgba(0,0,0,0.39);
+   box-shadow: -5px 3px 5px -4px rgba(0,0,0,0.39);
+  
+ }
+ 
+ .list-todo__title {
+   margin-bottom: 5px;
+ }
+ 
+ .list-todo__content {
+  
+   height: 100px;
+   margin-top: 25px;
+   flex: 1 1 0;
+ }
+ 
+ .list-todo__content h3 {
+   margin: 0;
+   font-size: 25px;
+   padding-left: 15px;
+  
+ }
+ 
+ .list-todo__content p {
+   font-size: 12px;
+   padding-left: 15px;
+   padding-top: 10px;
+   margin-top: 5px;
+ }
+ 
+ .list-todo__sidebar {
+   color: #E4E4E4;
+   
+   height: 100px;
+   margin-top: 25px;
+ }
+ 
+ 
+ .list-todo__btn{
+   display: block;
+   width: 100px;
+   height: 45px;
+   background-color: #3260b5;
+   color: #E4E4E4;
+   margin-top: 5px;
+   border-radius: 10px;
+   border: #261821 1px solid;
+   font-size: 18px;
+   margin-right: 10px;
+   box-shadow: -5px 3px 5px -4px rgba(0,0,0,0.39);
+ }
+ 
+ 
+ 

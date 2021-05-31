@@ -1,0 +1,17 @@
+<main>
+  <section class="add-todo" >
+    <header class="add-todo__header">
+      <h1 class="add-todo__title">Your Account Details</h1>
+      <% if @account.present? %>
+        <h1>Name: <%= @account.name%></h1>
+        <h1>User ID: <%= @account.userID%></h1>
+        <h1>Password: <%= @account.password%></h1>
+        <h1>Amount Available: <%= @account.amount%></h1>
+      <% end %>
+      </br>
+      <form action="/" method="get">
+        <button class="add-todo__btn" type="submit" >Back</button>
+      </form>
+    </header>
+  </section>
+</main>

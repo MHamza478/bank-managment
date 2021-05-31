@@ -1,0 +1,28 @@
+<main>
+  <section class="add-todo" >
+    <header class="add-todo__header">
+      <h1 class="add-todo__title">Bank Account Management</h1>
+      <% if @account.present? %>
+        <form action="/details" method="get">
+          <button class="add-todo__btn" type="submit" >Your Account</button>
+        </form>
+      <% end %>
+      <% if !@account.present? %>
+        <form action="/open-account" method="get">
+          <button class="add-todo__btn" type="submit" >Open Account</button>
+        </form>
+      <% end %>
+      </br>
+      <% if @account.present? %>
+        <form action="/deposit-amount" method="get">
+          <button class="add-todo__btn" type="submit" >Deposit</button>
+        </form>
+        </br>
+        <form action="/withdraw-amount" method="get">
+          <button class="add-todo__btn" type="submit" >Withdraw</button>
+        </form>
+      <% end %>
+      </br>
+    </header>
+  </section>
+</main>
